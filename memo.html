@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MemoPad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kiwi+Maru:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+</head>
+
+<body>
+    <header>
+        <h2><i class="fas fa-shopping-cart fa-lg fa-pink"></i> Shopping List <i
+                class="fas fa-shopping-cart fa-lg fa-pink"></i></h2>
+    </header>
+
+    <main>
+        <div class="bg_pattern Polka">
+            <div class="memo-inline">
+                <div class="memo_wrap">
+                    <input class="memo" name="memo" type="text" id="memo" placeholder="買い物メモ" />
+                    <button class="btn_new" id="new">追加する</button>
+                    <button class="btn_deleteAll" id="delete">全部消す</button>
+                </div>
+                <ul class="dropdown">
+                    <li class="dropdown-child">やさい
+                        <ul class="dropdown-item">
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_0()">にんじん</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_1()">たまねぎ</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_2()">じゃがいも</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_3()">なす</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_4()">ほうれん草</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_5()">トマト</button></li>
+                            <li><button class="btn vegetables" id="vegetables" onclick="yasai_6()">バナナ</button></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-child">調味料
+                        <ul class="dropdown-item">
+                            <li><button class="btn seasoning" onclick="seasoning_0()">みそ</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_1()">しょうゆ</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_2()">しお</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_3()">さとう</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_4()">酒</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_5()">みりん</button></li>
+                            <li><button class="btn seasoning" onclick="seasoning_6()">サラダ油</button></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-child">その他
+                        <ul class="dropdown-item">
+                            <li><button class="btn grocery" onclick="grocery_0()">牛乳</button></li>
+                            <li><button class="btn grocery" onclick="grocery_1()">コーヒー</button></li>
+                            <li><button class="btn grocery" onclick="grocery_2()">食パン</button></li>
+                            <li><button class="btn grocery" onclick="grocery_3()">納豆</button></li>
+                            <li><button class="btn grocery" onclick="grocery_4()">とうふ</button></li>
+                            <li><button class="btn grocery" onclick="grocery_5()">ラップ</button></li>
+                            <li><button class="btn grocery" onclick="grocery_6()">ゴミ袋</button></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+            <ul class="list-group" id="list">
+            </ul>
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/b28496ef11.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

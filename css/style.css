@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Caveat', cursive;
+    font-family: 'Kiwi Maru', serif;
+}
+body{
+    max-width: 400px;
+    height: 800px;
+    display: block;
+    text-align:center;
+    font-size: 3.6rem;
+    margin: auto;
+}
+
+
+ul{
+    padding: 0;
+    width:90%;
+}
+li{
+    list-style-type:none;
+    text-align: left;
+}
+h2{
+    width: 95%;
+    padding: 1.5rem 2.5rem;
+    border: 2px dotted gray;
+    margin: 15px auto 0;
+    font-size: 2.4rem;
+    color: gray;
+}
+
+
+
+/* 背景 */
+.bg_pattern {
+    max-width: 400px;
+    height: 800px;
+    background-color: #ffffff;
+    margin: auto;
+}
+.Polka {
+    background-image: radial-gradient(#ffc107 2px, #ffffff 2px);
+    background-size: 20px 20px;
+}
+
+.memo-inline{
+    padding-top: 15px;
+}
+
+/* ボタンリスト */
+.dropdown{
+    width: 95%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.dropdown-child{
+    width :80%;
+    height: 40px;
+    margin: 10px 10px;
+    padding: 5px 0;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    background-color: #A7D676;
+    color: white;
+    position: relative;
+}
+.dropdown-item{
+    width: 100%;
+    padding: 30px 0 10px 0;  
+    border-radius: 15px;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    display: none;
+}
+.dropdown-item>li{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+/* メモ */
+.memo_wrap{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+}
+.memo{
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid gray;
+    font-size: 100%;
+}
+.memo:focus{
+    border: 2px solid #1dc1d6; 
+    z-index: 10;
+    outline: 0;
+}
+
+
+/* 買い物リスト */
+.list-group{
+    padding: 1em 3em;
+    margin: 2em auto;
+    background: #e4fcff;
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32)
+}
+.list-group li{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ボタンデザイン */
+.btn{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #FFE5C0;
+    border: #FFE5C0;
+    margin-top: 5px;
+}
+.btn_new{
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    background-color: #1dc1d6;
+    border: #1dc1d6;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn_deleteAll{
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    background-color: #ED7179;
+    border: #ED7179;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn_delete{
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+    background-color: #ED7179;
+    border: #ED7179;
+}
+
+
+.fa-white{
+    color: white;
+}
+.fa-pink{
+    color: #FFA3A6;
+}
+
